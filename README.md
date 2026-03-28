@@ -1,79 +1,95 @@
-# Manga_saga
-Manga Saga – E-Commerce Web Application
+# 📖 Manga Saga
 
-Manga Saga is a full-stack e-commerce web application built using Java Spring Boot, Thymeleaf, and MySQL, designed for browsing, purchasing, and managing manga products. It includes complete user and admin functionalities with secure authentication and a clean, user-friendly interface.
+Manga Saga is a web-based platform designed for browsing and reading manga content with a clean and user-friendly interface. This project demonstrates frontend development skills along with handling structured manga data and UI rendering.
 
-🚀 Features
-User Features
+---
 
-Browse and search manga products
+## 🚀 Features
 
-View detailed product pages
+- 📚 Browse manga collections
+- 🔍 Search functionality for quick discovery
+- 📖 Read manga chapters with a smooth UI
+- ⚡ Fast and responsive design
+- 🎨 Clean and modern user interface
 
-Add items to cart and place orders
+---
 
-Create account, login, and manage profile
+## 🏗️ Architecture Overview
 
-Secure authentication with Spring Security
+```
+                ┌──────────────────────┐
+                │      User (Browser)  │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │     Frontend UI      │
+                │ (HTML / CSS / JS)    │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │   Manga Data Layer   │
+                │ (Static / API Data)  │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │ External Sources /   │
+                │ Manga Content APIs   │
+                └──────────────────────┘
+```
 
-Admin Features
+---
 
-Add, update, and delete products (CRUD)
+## 🧩 Project Structure
 
-Manage inventory and categories
+```
+Manga-saga/
+│
+├── src/
+├── assets/
+├── components/
+├── pages/
+├── index.html
+└── README.md
+```
 
-Track and manage customer orders
+---
 
-Dashboard-style overview of products & orders
+## ⚙️ Tech Stack
 
-🛠️ Tech Stack
+- HTML  
+- CSS  
+- JavaScript  
+- Git & GitHub  
 
-Backend: Java, Spring Boot, Spring MVC, Spring Security, JPA/Hibernate
-Frontend: Thymeleaf, HTML, CSS, Bootstrap
-Database: MySQL
-Build Tool: Maven
-Version Control: Git & GitHub
+---
 
-📂 Architecture
+## 🚀 Getting Started
 
-Controller Layer: Handles HTTP requests, manages routing, and returns the appropriate views or responses.
+### Clone the Repository
 
-Service Layer: Contains business logic and coordinates between the controller and repository/DAO layers.
+```
+git clone https://github.com/maverick-op/Manga-saga.git
+cd Manga-saga
+```
 
-DAO (Data Access Object) Layer: Provides an abstraction for database operations and interacts with the database using JPA/Hibernate.
+### Run the Project
 
-📘 Core Modules
+Open index.html in your browser or use Live Server.
 
-User Authentication & Authorization
+---
 
-Product Catalog Management
+## 🧪 Future Improvements
 
-Shopping Cart & Checkout
+- Backend integration  
+- Authentication system  
+- Bookmark feature  
+- Dark mode  
 
-Order Management
+---
 
-Admin Dashboard
+## 📄 License
 
-
-▶️ How to Run the Project
-
-Clone the repository
-
-Configure the MySQL database in application.properties
-
-Run the project using Maven or your IDE
-
-Access the app at:
-http://localhost:8080/
-
-📌 Future Enhancements
-
-Payment gateway integration
-
-User reviews and ratings
-
-REST API version for mobile apps
-
-Wishlist functionality
-
-Improved admin analytics dashboard
+MIT License
